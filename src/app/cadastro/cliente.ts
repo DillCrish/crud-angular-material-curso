@@ -1,5 +1,3 @@
-import { v4 as uuid } from 'uuid'
-
 export class Cliente {
   id?: string;
   nome?: string;
@@ -8,9 +6,7 @@ export class Cliente {
   dataNascimento?: Date;
 
   static newCliente() {
-    const cliente = new Cliente();
-    cliente.id = uuid();
-    return cliente;
+    return new Cliente();
   }
 
 }
